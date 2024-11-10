@@ -1,0 +1,235 @@
+PS C:\Users\esteb\OneDrive\Documentos\U\BigData\ProyectoFinalBD> py main.py
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+24/11/09 14:56:45 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+24/11/09 14:56:50 WARN TaskSetManager: Stage 0 contains a task of very large size (2598 KiB). The maximum recommended task size is 1000 KiB.
+24/11/09 14:56:50 ERROR PythonRunner: Python worker exited unexpectedly (crashed)
+java.net.SocketException: Connection reset by peer
+        at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+        at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:54)
+        at java.base/sun.nio.ch.NioSocketImpl.tryWrite(NioSocketImpl.java:394)
+        at java.base/sun.nio.ch.NioSocketImpl.implWrite(NioSocketImpl.java:413)
+        at java.base/sun.nio.ch.NioSocketImpl.write(NioSocketImpl.java:440)
+        at java.base/sun.nio.ch.NioSocketImpl$2.write(NioSocketImpl.java:819)
+        at java.base/java.net.Socket$SocketOutputStream.write(Socket.java:1195)
+        at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:125)
+        at java.base/java.io.BufferedOutputStream.implWrite(BufferedOutputStream.java:222)
+        at java.base/java.io.BufferedOutputStream.write(BufferedOutputStream.java:200)
+        at java.base/java.io.DataOutputStream.write(DataOutputStream.java:115)
+        at java.base/java.io.FilterOutputStream.write(FilterOutputStream.java:110)
+        at org.apache.spark.api.python.PythonRDD$.write$1(PythonRDD.scala:310)
+        at org.apache.spark.api.python.PythonRDD$.$anonfun$writeIteratorToStream$1(PythonRDD.scala:322)
+        at org.apache.spark.api.python.PythonRDD$.$anonfun$writeIteratorToStream$1$adapted(PythonRDD.scala:322)
+        at scala.collection.Iterator.foreach(Iterator.scala:943)
+        at scala.collection.Iterator.foreach$(Iterator.scala:943)
+        at org.apache.spark.InterruptibleIterator.foreach(InterruptibleIterator.scala:28)
+        at org.apache.spark.api.python.PythonRDD$.writeIteratorToStream(PythonRDD.scala:322)
+        at org.apache.spark.api.python.PythonRunner$$anon$2.writeIteratorToStream(PythonRunner.scala:751)
+        at org.apache.spark.api.python.BasePythonRunner$WriterThread.$anonfun$run$1(PythonRunner.scala:451)
+        at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1928)
+        at org.apache.spark.api.python.BasePythonRunner$WriterThread.run(PythonRunner.scala:282)
+24/11/09 14:56:50 ERROR PythonRunner: This may have been caused by a prior exception:
+java.net.SocketException: Connection reset by peer
+        at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+        at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:54)
+        at java.base/sun.nio.ch.NioSocketImpl.tryWrite(NioSocketImpl.java:394)
+        at java.base/sun.nio.ch.NioSocketImpl.implWrite(NioSocketImpl.java:413)
+        at java.base/sun.nio.ch.NioSocketImpl.write(NioSocketImpl.java:440)
+        at java.base/sun.nio.ch.NioSocketImpl$2.write(NioSocketImpl.java:819)
+        at java.base/java.net.Socket$SocketOutputStream.write(Socket.java:1195)
+        at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:125)
+        at java.base/java.io.BufferedOutputStream.implWrite(BufferedOutputStream.java:222)
+        at java.base/java.io.BufferedOutputStream.write(BufferedOutputStream.java:200)
+        at java.base/java.io.DataOutputStream.write(DataOutputStream.java:115)
+        at java.base/java.io.FilterOutputStream.write(FilterOutputStream.java:110)
+        at org.apache.spark.api.python.PythonRDD$.write$1(PythonRDD.scala:310)
+        at org.apache.spark.api.python.PythonRDD$.$anonfun$writeIteratorToStream$1(PythonRDD.scala:322)
+        at org.apache.spark.api.python.PythonRDD$.$anonfun$writeIteratorToStream$1$adapted(PythonRDD.scala:322)
+        at scala.collection.Iterator.foreach(Iterator.scala:943)
+        at scala.collection.Iterator.foreach$(Iterator.scala:943)
+        at org.apache.spark.InterruptibleIterator.foreach(InterruptibleIterator.scala:28)
+        at org.apache.spark.api.python.PythonRDD$.writeIteratorToStream(PythonRDD.scala:322)
+        at org.apache.spark.api.python.PythonRunner$$anon$2.writeIteratorToStream(PythonRunner.scala:751)
+        at org.apache.spark.api.python.BasePythonRunner$WriterThread.$anonfun$run$1(PythonRunner.scala:451)
+        at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1928)
+        at org.apache.spark.api.python.BasePythonRunner$WriterThread.run(PythonRunner.scala:282)
+24/11/09 14:56:50 ERROR Executor: Exception in task 0.0 in stage 0.0 (TID 0)
+java.net.SocketException: Connection reset by peer
+        at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+        at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:54)
+        at java.base/sun.nio.ch.NioSocketImpl.tryWrite(NioSocketImpl.java:394)
+        at java.base/sun.nio.ch.NioSocketImpl.implWrite(NioSocketImpl.java:413)
+        at java.base/sun.nio.ch.NioSocketImpl.write(NioSocketImpl.java:440)
+        at java.base/sun.nio.ch.NioSocketImpl$2.write(NioSocketImpl.java:819)
+        at java.base/java.net.Socket$SocketOutputStream.write(Socket.java:1195)
+        at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:125)
+        at java.base/java.io.BufferedOutputStream.implWrite(BufferedOutputStream.java:222)
+        at java.base/java.io.BufferedOutputStream.write(BufferedOutputStream.java:200)
+        at java.base/java.io.DataOutputStream.write(DataOutputStream.java:115)
+        at java.base/java.io.FilterOutputStream.write(FilterOutputStream.java:110)
+        at org.apache.spark.api.python.PythonRDD$.write$1(PythonRDD.scala:310)
+        at org.apache.spark.api.python.PythonRDD$.$anonfun$writeIteratorToStream$1(PythonRDD.scala:322)
+        at org.apache.spark.api.python.PythonRDD$.$anonfun$writeIteratorToStream$1$adapted(PythonRDD.scala:322)
+        at scala.collection.Iterator.foreach(Iterator.scala:943)
+        at scala.collection.Iterator.foreach$(Iterator.scala:943)
+        at org.apache.spark.InterruptibleIterator.foreach(InterruptibleIterator.scala:28)
+        at org.apache.spark.api.python.PythonRDD$.writeIteratorToStream(PythonRDD.scala:322)
+        at org.apache.spark.api.python.PythonRunner$$anon$2.writeIteratorToStream(PythonRunner.scala:751)
+        at org.apache.spark.api.python.BasePythonRunner$WriterThread.$anonfun$run$1(PythonRunner.scala:451)
+        at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1928)
+        at org.apache.spark.api.python.BasePythonRunner$WriterThread.run(PythonRunner.scala:282)
+24/11/09 14:56:50 WARN TaskSetManager: Lost task 0.0 in stage 0.0 (TID 0) (estpc executor driver): java.net.SocketException: Connection reset by peer
+        at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+        at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:54)
+        at java.base/sun.nio.ch.NioSocketImpl.tryWrite(NioSocketImpl.java:394)
+        at java.base/sun.nio.ch.NioSocketImpl.implWrite(NioSocketImpl.java:413)
+        at java.base/sun.nio.ch.NioSocketImpl.write(NioSocketImpl.java:440)
+        at java.base/sun.nio.ch.NioSocketImpl$2.write(NioSocketImpl.java:819)
+        at java.base/java.net.Socket$SocketOutputStream.write(Socket.java:1195)
+        at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:125)
+        at java.base/java.io.BufferedOutputStream.implWrite(BufferedOutputStream.java:222)
+        at java.base/java.io.BufferedOutputStream.write(BufferedOutputStream.java:200)
+        at java.base/java.io.DataOutputStream.write(DataOutputStream.java:115)
+        at java.base/java.io.FilterOutputStream.write(FilterOutputStream.java:110)
+        at org.apache.spark.api.python.PythonRDD$.write$1(PythonRDD.scala:310)
+        at org.apache.spark.api.python.PythonRDD$.$anonfun$writeIteratorToStream$1(PythonRDD.scala:322)
+        at org.apache.spark.api.python.PythonRDD$.$anonfun$writeIteratorToStream$1$adapted(PythonRDD.scala:322)
+        at scala.collection.Iterator.foreach(Iterator.scala:943)
+        at scala.collection.Iterator.foreach$(Iterator.scala:943)
+        at org.apache.spark.InterruptibleIterator.foreach(InterruptibleIterator.scala:28)
+        at org.apache.spark.api.python.PythonRDD$.writeIteratorToStream(PythonRDD.scala:322)
+        at org.apache.spark.api.python.PythonRunner$$anon$2.writeIteratorToStream(PythonRunner.scala:751)
+        at org.apache.spark.api.python.BasePythonRunner$WriterThread.$anonfun$run$1(PythonRunner.scala:451)
+        at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1928)
+        at org.apache.spark.api.python.BasePythonRunner$WriterThread.run(PythonRunner.scala:282)
+
+24/11/09 14:56:50 ERROR TaskSetManager: Task 0 in stage 0.0 failed 1 times; aborting job
+Traceback (most recent call last):
+  File "C:\Users\esteb\OneDrive\Documentos\U\BigData\ProyectoFinalBD\main.py", line 40, in <module>
+    main()
+  File "C:\Users\esteb\OneDrive\Documentos\U\BigData\ProyectoFinalBD\main.py", line 18, in main
+    word_counts_df = get_word_counts(pdf_text, TOP_N_WORDS, spark)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\esteb\OneDrive\Documentos\U\BigData\ProyectoFinalBD\word_count.py", line 45, in get_word_counts
+    words_df = spark.createDataFrame(words_rdd)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\esteb\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyspark\sql\session.py", line 1443, in createDataFrame
+    return self._create_dataframe(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\esteb\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyspark\sql\session.py", line 1483, in _create_dataframe
+    rdd, struct = self._createFromRDD(data.map(prepare), schema, samplingRatio)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\esteb\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyspark\sql\session.py", line 1056, in _createFromRDD
+    struct = self._inferSchema(rdd, samplingRatio, names=schema)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\esteb\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyspark\sql\session.py", line 996, in _inferSchema
+    first = rdd.first()
+            ^^^^^^^^^^^
+  File "C:\Users\esteb\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyspark\rdd.py", line 2888, in first
+    rs = self.take(1)
+         ^^^^^^^^^^^^
+  File "C:\Users\esteb\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyspark\rdd.py", line 2855, in take
+    res = self.context.runJob(self, takeUpToNumLeft, p)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\esteb\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyspark\context.py", line 2510, in runJob     
+    sock_info = self._jvm.PythonRDD.runJob(self._jsc.sc(), mappedRDD._jrdd, partitions)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\esteb\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\java_gateway.py", line 1322, in __call__ 
+    return_value = get_return_value(
+                   ^^^^^^^^^^^^^^^^^
+  File "C:\Users\esteb\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyspark\errors\exceptions\captured.py", line 179, in deco
+    return f(*a, **kw)
+           ^^^^^^^^^^^
+  File "C:\Users\esteb\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\protocol.py", line 326, in get_return_value
+    raise Py4JJavaError(
+py4j.protocol.Py4JJavaError: An error occurred while calling z:org.apache.spark.api.python.PythonRDD.runJob.
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 0.0 failed 1 times, most recent failure: Lost task 0.0 in stage 0.0 (TID 0) (estpc executor driver): java.net.SocketException: Connection reset by peer
+        at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+        at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:54)
+        at java.base/sun.nio.ch.NioSocketImpl.tryWrite(NioSocketImpl.java:394)
+        at java.base/sun.nio.ch.NioSocketImpl.implWrite(NioSocketImpl.java:413)
+        at java.base/sun.nio.ch.NioSocketImpl.write(NioSocketImpl.java:440)
+        at java.base/sun.nio.ch.NioSocketImpl$2.write(NioSocketImpl.java:819)
+        at java.base/java.net.Socket$SocketOutputStream.write(Socket.java:1195)
+        at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:125)
+        at java.base/java.io.BufferedOutputStream.implWrite(BufferedOutputStream.java:222)
+        at java.base/java.io.BufferedOutputStream.write(BufferedOutputStream.java:200)
+        at java.base/java.io.DataOutputStream.write(DataOutputStream.java:115)
+        at java.base/java.io.FilterOutputStream.write(FilterOutputStream.java:110)
+        at org.apache.spark.api.python.PythonRDD$.write$1(PythonRDD.scala:310)
+        at org.apache.spark.api.python.PythonRDD$.$anonfun$writeIteratorToStream$1(PythonRDD.scala:322)
+        at org.apache.spark.api.python.PythonRDD$.$anonfun$writeIteratorToStream$1$adapted(PythonRDD.scala:322)
+        at scala.collection.Iterator.foreach(Iterator.scala:943)
+        at scala.collection.Iterator.foreach$(Iterator.scala:943)
+        at org.apache.spark.InterruptibleIterator.foreach(InterruptibleIterator.scala:28)
+        at org.apache.spark.api.python.PythonRDD$.writeIteratorToStream(PythonRDD.scala:322)
+        at org.apache.spark.api.python.PythonRunner$$anon$2.writeIteratorToStream(PythonRunner.scala:751)
+        at org.apache.spark.api.python.BasePythonRunner$WriterThread.$anonfun$run$1(PythonRunner.scala:451)
+        at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1928)
+        at org.apache.spark.api.python.BasePythonRunner$WriterThread.run(PythonRunner.scala:282)
+
+Driver stacktrace:
+        at org.apache.spark.scheduler.DAGScheduler.failJobAndIndependentStages(DAGScheduler.scala:2856)
+        at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2(DAGScheduler.scala:2792)
+        at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2$adapted(DAGScheduler.scala:2791)
+        at scala.collection.mutable.ResizableArray.foreach(ResizableArray.scala:62)
+        at scala.collection.mutable.ResizableArray.foreach$(ResizableArray.scala:55)
+        at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:49)
+        at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:2791)
+        at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1(DAGScheduler.scala:1247)
+        at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1$adapted(DAGScheduler.scala:1247)
+        at scala.Option.foreach(Option.scala:407)
+        at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:1247)
+        at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:3060)
+        at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2994)
+        at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2983)
+        at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:49)
+        at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:989)
+        at org.apache.spark.SparkContext.runJob(SparkContext.scala:2393)
+        at org.apache.spark.SparkContext.runJob(SparkContext.scala:2414)
+        at org.apache.spark.SparkContext.runJob(SparkContext.scala:2433)
+        at org.apache.spark.api.python.PythonRDD$.runJob(PythonRDD.scala:181)
+        at org.apache.spark.api.python.PythonRDD.runJob(PythonRDD.scala)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:75)
+        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:52)
+        at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+        at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+        at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+        at py4j.Gateway.invoke(Gateway.java:282)
+        at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+        at py4j.commands.CallCommand.execute(CallCommand.java:79)
+        at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+        at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+        at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.net.SocketException: Connection reset by peer
+        at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+        at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:54)
+        at java.base/sun.nio.ch.NioSocketImpl.tryWrite(NioSocketImpl.java:394)
+        at java.base/sun.nio.ch.NioSocketImpl.implWrite(NioSocketImpl.java:413)
+        at java.base/sun.nio.ch.NioSocketImpl.write(NioSocketImpl.java:440)
+        at java.base/sun.nio.ch.NioSocketImpl$2.write(NioSocketImpl.java:819)
+        at java.base/java.net.Socket$SocketOutputStream.write(Socket.java:1195)
+        at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:125)
+        at java.base/java.io.BufferedOutputStream.implWrite(BufferedOutputStream.java:222)
+        at java.base/java.io.BufferedOutputStream.write(BufferedOutputStream.java:200)
+        at java.base/java.io.DataOutputStream.write(DataOutputStream.java:115)
+        at java.base/java.io.FilterOutputStream.write(FilterOutputStream.java:110)
+        at org.apache.spark.api.python.PythonRDD$.write$1(PythonRDD.scala:310)
+        at org.apache.spark.api.python.PythonRDD$.$anonfun$writeIteratorToStream$1(PythonRDD.scala:322)
+        at org.apache.spark.api.python.PythonRDD$.$anonfun$writeIteratorToStream$1$adapted(PythonRDD.scala:322)
+        at scala.collection.Iterator.foreach(Iterator.scala:943)
+        at scala.collection.Iterator.foreach$(Iterator.scala:943)
+        at org.apache.spark.InterruptibleIterator.foreach(InterruptibleIterator.scala:28)
+        at org.apache.spark.api.python.PythonRDD$.writeIteratorToStream(PythonRDD.scala:322)
+        at org.apache.spark.api.python.PythonRunner$$anon$2.writeIteratorToStream(PythonRunner.scala:751)
+        at org.apache.spark.api.python.BasePythonRunner$WriterThread.$anonfun$run$1(PythonRunner.scala:451)
+        at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1928)
+        at org.apache.spark.api.python.BasePythonRunner$WriterThread.run(PythonRunner.scala:282)
+
+CORRECTO: el proceso con PID 8528 (proceso secundario de PID 2780)
+ha sido terminado.
+CORRECTO: el proceso con PID 2780 (proceso secundario de PID 8964)
+ha sido terminado.
+CORRECTO: el proceso con PID 8964 (proceso secundario de PID 9788)
+ha sido terminado.

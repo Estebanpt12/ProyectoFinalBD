@@ -1,11 +1,11 @@
-# config.py
+# Ruta del archivo PDF que se procesará
+PDF_PATH = "Document.pdf"
 
-# Ruta del archivo PDF
-PDF_PATH = "/ruta/al/archivo.pdf"
-
-# Número de palabras más frecuentes a visualizar
+# Número de palabras más frecuentes a visualizar en los resultados
 TOP_N_WORDS = 20
 
-# Opciones para almacenar los resultados
+# Configuración para almacenar resultados en un archivo CSV
 SAVE_RESULTS_TO_CSV = True
+
+# Ruta del archivo CSV donde se guardarán los resultados
 CSV_OUTPUT_PATH = "top_words.csv"
